@@ -25,6 +25,7 @@ services:
       - MARIADB_PORT_NUMBER=3306
       - WORDPRESS_DATABASE_USER=bn_wordpress
       - WORDPRESS_DATABASE_NAME=bitnami_wordpress
+      - WORDPRESS_SCHEME=https
       - ALLOW_EMPTY_PASSWORD=yes
 volumes:
   mariadb_data:
