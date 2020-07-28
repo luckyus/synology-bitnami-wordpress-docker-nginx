@@ -4,3 +4,4 @@ To run bitnami's docker image for wordpress (nginx version, not apache) at my ch
 
 ## Notes
 - need to add folder ./certs and add the cert files (server.crt & server.key) to the folder
+- set user: '1024:0' to allow mounting to host's /volume1/docker/admin_wordpress_data
