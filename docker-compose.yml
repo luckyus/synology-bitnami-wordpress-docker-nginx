@@ -2,7 +2,7 @@ version: '2'
 services:
   mariadb:
     image: 'docker.io/bitnami/mariadb:latest'
-    user: '1024:0'
+    user: root
     volumes:
       - '/volume1/docker/admin_mairadb_data:/bitnami/mariadb'
     environment:
@@ -11,7 +11,7 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
   wordpress:
     image: 'docker.io/bitnami/wordpress-nginx:latest'
-    user: '1024:0'
+    user: root
     ports:
       - '32832:8080'
       - '32833:8443'
@@ -28,8 +28,3 @@ services:
       - WORDPRESS_DATABASE_NAME=bitnami_wordpress
       - WORDPRESS_SCHEME=https
       - ALLOW_EMPTY_PASSWORD=yes
-volumes:
-  mariadb_data:
-    driver: local
-  wordpress_data:
-    driver: local
