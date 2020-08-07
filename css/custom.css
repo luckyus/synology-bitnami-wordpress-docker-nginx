@@ -1,0 +1,27 @@
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-family: 'Microsoft JhengHei', Arial, Helvetica, sans-serif;
+}
+
+.header-img {
+	width: 100%;
+}
+
+.feature-bg {
+	background: rgba(255, 255, 255,0.3);
+	width: 100vw;
+	border-radius: 10px;
+}
+
+.feature-text {
+	font-size: 2rem;
+}
+
+.header-img {
+}
+
+@media screen and (min-width: 768px) {
+	.feature-bg {
+		width: 60vw;
+	}
+}

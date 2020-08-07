@@ -3,12 +3,16 @@ services:
   mariadb:
     image: 'docker.io/bitnami/mariadb:latest'
     user: root
+    ports:
+      - '3306:3306'
     volumes:
       - '/volume1/docker/admin_mairadb_data:/bitnami/mariadb'
     environment:
       - MARIADB_USER=bn_wordpress
+      - MARIADB_PASSWORD=helloWorld987
       - MARIADB_DATABASE=bitnami_wordpress
-      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_ROOT_PASSWORD=helloWorld987
+      - ALLOW_EMPTY_PASSWORD=no
   wordpress:
     image: 'docker.io/bitnami/wordpress-nginx:latest'
     user: root
@@ -25,6 +29,7 @@ services:
       - MARIADB_HOST=mariadb
       - MARIADB_PORT_NUMBER=3306
       - WORDPRESS_DATABASE_USER=bn_wordpress
+      - WORDPRESS_DATABASE_PASSWORD=helloWorld987
       - WORDPRESS_DATABASE_NAME=bitnami_wordpress
       - WORDPRESS_SCHEME=https
-      - ALLOW_EMPTY_PASSWORD=yes
+      - ALLOW_EMPTY_PASSWORD=no
