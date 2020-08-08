@@ -3,8 +3,14 @@ body {
 	font-family: 'Microsoft JhengHei', Arial, Helvetica, sans-serif;
 }
 
-.header-img {
+.banner-container {
+	height: 150px;
+}
+
+.banner {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .feature-bg {
@@ -14,10 +20,7 @@ body {
 }
 
 .feature-text {
-	font-size: 2rem;
-}
-
-.header-img {
+	font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -25,3 +28,8 @@ body {
 		width: 60vw;
 	}
 }
+
+div.row > div > div {
+	margin-bottom: 15px;
+}
+
