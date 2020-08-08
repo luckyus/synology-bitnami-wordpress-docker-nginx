@@ -1,30 +1,26 @@
 body {
-	font-family: 'Noto Sans TC', sans-serif;
+	/* font-family: 'Noto Sans TC', sans-serif; */
 	font-family: 'Microsoft JhengHei', Arial, Helvetica, sans-serif;
 }
 
-.banner-container {
-	height: 150px;
-}
-
-.banner {
+.my-banner {
 	width: 100%;
-	height: 100%;
+	height: 150px;
 	object-fit: cover;
 }
 
-.feature-bg {
+.my-feature-bg {
 	background: rgba(255, 255, 255,0.3);
 	width: 100vw;
 	border-radius: 10px;
 }
 
-.feature-text {
+.my-feature-text {
 	font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
-	.feature-bg {
+	.my-feature-bg {
 		width: 60vw;
 	}
 }
@@ -33,3 +29,23 @@ div.row > div > div {
 	margin-bottom: 15px;
 }
 
+.my-portrait {
+	width: 120px;
+	float: right;
+	margin-left: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (min-width: 768px) {
+	.my-portrait {
+		width: 150px;
+	}
+}
+
+.my-blog-text {
+	font-size: 1.1rem;
+}
+
+.my-poster > img {
+	width: 100%;
+}
