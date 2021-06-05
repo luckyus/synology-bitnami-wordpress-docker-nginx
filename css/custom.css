@@ -1,6 +1,7 @@
 body {
 	/* font-family: 'Noto Sans TC', sans-serif; */
 	font-family: 'Microsoft JhengHei', Arial, Helvetica, sans-serif;
+	overflow-y: scroll;
 }
 
 .my-banner {
